@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7: Cambio de Atributos con `setAttribute`</title>
+</head>
+
+<body>
+
+    <div id="miElemento" class="original-class">Elemento con atributos</div>
+    <button id="cambiarAtributos">Cambiar atributos</button>
+
+    <script>
+        const boton = document.getElementById('cambiarAtributos');
+        const elemento = document.getElementById('miElemento');
+
+        boton.addEventListener('click', () => {
+            // Cambiar el atributo 'class'
+            elemento.setAttribute('class', 'nueva-clase');
+            // Agregar un nuevo atributo 'title'
+            elemento.setAttribute('title', 'Este es un nuevo atributo title');
+        });
+    </script>
+
+</body>
+
+</html>

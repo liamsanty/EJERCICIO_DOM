@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3: Selección de Elementos con `querySelector`</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="miInput">Escribe algo:</label>
+        <input type="text" id="miInput" value="Texto inicial" />
+        <button type="button" id="cambiarValor">Cambiar valor</button>
+    </form>
+
+    <script>
+        // Selección del input utilizando querySelector
+        const inputElement = document.querySelector('#miInput');
+        const botonCambiar = document.querySelector('#cambiarValor');
+
+        // Evento de clic en el botón para cambiar el valor del input
+        botonCambiar.addEventListener('click', () => {
+            inputElement.value = 'Nuevo valor ingresado';
+        });
+    </script>
+</body>
+
+</html>
